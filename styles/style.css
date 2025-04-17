@@ -3,3 +3,244 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
+
+
+.header{
+  position: relative;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  padding: 0 10px;
+  max-height: 668px;
+  background-image: var(--bg-header-image, url(/images/cover-image-dark.png));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.decorated-zone::before {
+  position: absolute;
+  content: "";
+  block-size: 25px;
+  inline-size: 25px;
+  border-top: 1px solid var(--text-color, #ff0070);
+  border-right: 1px solid var(--text-color, #ff0070);
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+}
+
+.decorated-zone::after {
+  position: absolute;
+  content: "";
+  block-size: 25px;
+  inline-size: 25px;
+  border-bottom: 1px solid var(--text-color, #ff0070);
+  border-left: 1px solid var(--text-color, #ff0070);
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
+}
+
+.rec-element {
+  display: var(--rec-display, flex);
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 20px;
+  justify-content: center;
+}
+
+.rec-element::before {
+  content: "Rec";
+  color: var(--text-color, #ff0070);
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.rec-element::after {
+  position: relative;
+  content: "";
+  display: inline-block;
+  block-size: 9px;
+  inline-size: 9px;
+  border-radius: 50%;
+  margin-inline-start: 4px;
+  margin-block-start: 5px;
+  background-color: var(--bg-decoration, #ff0070);
+  box-shadow: 0px 0px 4px 2px var(--accent-color, #ff0070);
+  margin-inline-end: 5px;
+  inset-inline-end: 0px;
+  inset-inline-start: 4px;
+  inset-block-start: 3px;
+}
+
+.header__theme-menu{
+  margin-block-start: 65px;;
+}
+
+.header__theme-menu-list{
+  text-align: end;
+  margin-top: 10px;
+}
+
+.header__theme-menu-item{
+  margin-top: 10px;
+}
+
+.header__theme-menu-item:first-child{
+  margin-top: 0;
+}
+
+.header__theme-menu-button{
+  background-color: inherit;
+  border: none;
+  text-transform: lowercase;
+  color: var(--accent-color);
+  font-size: var(--font-size);
+  width: 70px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.header__theme-menu-button_active{
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:hover{
+  border: 1px solid rgba(255, 0, 112, 0.4);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--text-color, #ff0070);
+  outline: none;
+}
+
+
+.header-title{
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: var(--line-height-header-title);
+  color: var(--dark-color-title);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header-description{
+  margin-block-start: 55px;
+  height: 117px;
+  color: var(--accent-text-color);
+  font-weight: var(--font-weight-bold) ;
+  font-size: var(--font-size);
+}
+
+.title-decor{
+  background-color: var(--accent-color);
+}
+
+.main-content{
+  padding: 0 10px;
+  background-color: var(--bg-color);
+}
+
+.main-content__section{
+  padding-block-start: 50px;
+}
+
+.main-content__section:first-child{
+  padding-block-start: 40px;
+}
+
+.main-content__section-card{
+  margin-block-end: 20px;
+}
+
+.main-content__section-card:last-child{
+  margin-block-end: 0;
+}
+
+.main-content__section-title{
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height);
+  color: var(--accent-color);
+  margin-block-end: 20px;
+}
+
+.main-content__section-subtitle{
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height);
+  color: var(--accent-text-color);
+  background-color: var(--accent-color);
+}
+
+.main-content__section-description{
+  margin-block-start: 10px;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height);
+  color: var(--content-text-color);
+}
+
+.main-content__section-description a{
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.main-content__section-description a:hover{
+  border-bottom: 1px solid #F1B2CE;
+}
+
+.main-content__section-description a:focus {
+  outline: none;
+}
+
+.main-content__section-description a:focus-visible {
+  border: 1px solid #F1B2CE;
+  outline: none;
+}
+
+.main-content__fish-section-subtitle{
+  margin-block-start: 20px;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height);
+  color: var(--accent-text-color);
+  background-color: var(--accent-color);
+}
+.main-content__section-images{
+  background-color: var(--bg-color);
+  padding-block-start: 50px;
+  padding-block-end: 40px;
+}
+
+.section-images-item{
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-block-start: 10px;
+}
+
+.footer{
+  background-color: var(--bg-color);
+  height: 100vh;
+  max-height: 667px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.footer-title{
+  font-weight: var(--font-weight-bold);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: var(--line-height-header-title);
+  color: var(--dark-color-title);
+  text-shadow: 2px 2px 0 var(--accent-color);
+}

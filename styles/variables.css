@@ -1,4 +1,15 @@
 /*
   Переменные для вашего проекта
   и их переопределение под различные устройства
+  
 */
+
+:root{
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-size: 18px;
+  --line-height: 23.4px;
+  --font-size-header-title: 116px;
+  --line-height-header-title: 83%;
+
+}
