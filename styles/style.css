@@ -414,8 +414,8 @@
   }
 }
 
-@media (width >= 1024px){
-  .header{
+@media (width >= 1024px) {
+  .header {
     min-height: 768px;
   }
 
