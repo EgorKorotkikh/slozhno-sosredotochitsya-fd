@@ -10,8 +10,8 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-header-image: url(/images/cover-image-light.png);
-  --dark-color-title: #FFC2E6;
-  --accent-color: #FF8DCB;
+  --dark-color-title: #ffc2e6;
+  --accent-color: #ff8dcb;
   --color-decor: #353430;
   --button-color: #353430;
   --accent-text-color: #353430;
@@ -21,7 +21,7 @@
   --button-color-hover: rgba(50, 49, 45, 0.4);
   --bg-decoration: #ff0070;
   --content-text-color: #353430;
-  --footer-text-shadow: #FF0070;
+  --footer-text-shadow: #ff0070;
 }
 
 .theme-light .page {
@@ -30,18 +30,18 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-  --bg-header-image: url(/images/cover-image-light.png);
-  --dark-color-title: #FFC2E6;
-  --accent-color: #FF8DCB;
-  --color-decor: #353430;
-  --button-color: #353430;
-  --accent-text-color: #353430;
-  --section-title: #353430;
-  --bg-color: #fff1f7;
-  --rec-display: none;
-  --button-color-hover: rgba(50, 49, 45, 0.4);
-  --bg-decoration: #ff0070;
-  --content-text-color: #353430;
-  --footer-text-shadow: #FF0070;     
+    --bg-header-image: url(/images/cover-image-light.png);
+    --dark-color-title: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --color-decor: #353430;
+    --button-color: #353430;
+    --accent-text-color: #353430;
+    --section-title: #353430;
+    --bg-color: #fff1f7;
+    --rec-display: none;
+    --button-color-hover: rgba(50, 49, 45, 0.4);
+    --bg-decoration: #ff0070;
+    --content-text-color: #353430;
+    --footer-text-shadow: #ff0070;
   }
 }
