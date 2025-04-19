@@ -31,7 +31,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-header-image: url(/images/cover-image-light.png);
+  --bg-header-image: url(/images/cover-image-light.png);
   --dark-color-title: #FFC2E6;
   --accent-color: #FF8DCB;
   --color-decor: #353430;
@@ -44,7 +44,5 @@
   --bg-decoration: #ff0070;
   --content-text-color: #353430;
   --footer-text-shadow: #FF0070; 
-
   }
-
 }
