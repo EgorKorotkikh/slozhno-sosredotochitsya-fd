@@ -11,5 +11,17 @@
   --line-height: 23.4px;
   --font-size-header-title: 116px;
   --line-height-header-title: 83%;
+  --bg-header-image: url(/images/cover-image-dark.png);
+  --dark-color-title: #DB00FF;
+  --accent-color: #FF0070;
+  --section-title: #FF0070;
+  --button-color: #FF0070;
+  --button-color-hover: rgba(255, 0, 112, 0.4);
+  --accent-text-color: #000028;
+  --bg-color: #000028;
+  --footer-text-shadow: #FF0070;
+  --rec-display: flex;
+  --bg-decoration: #ff0070;
+  --content-text-color: #F1B2CE;
 
 }
