@@ -22,6 +22,7 @@
   --bg-decoration: #ff0070;
   --content-text-color: #353430;
   --footer-text-shadow: #ff0070;
+  --focus-link: #353430;
 }
 
 .theme-light .page {
@@ -43,5 +44,6 @@
     --bg-decoration: #ff0070;
     --content-text-color: #353430;
     --footer-text-shadow: #ff0070;
+    --focus-link: #353430;
   }
 }

@@ -200,7 +200,7 @@
 }
 
 .main-content__section-description a:focus-visible {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--focus-link);
   outline: none;
 }
 
@@ -401,8 +401,17 @@
     width: 491px;
   }
 
+  .main-content__section {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .main-content__section-card {
     width: 737px;
+  }
+
+  .section-concentration{
+    display: block;
   }
 
   .section-concentration > .main-content__section-title {
@@ -413,6 +422,7 @@
     display: flex;
     width: 100%;
     gap: 20px;
+    flex-wrap: wrap;
   }
 
   .section-concentration .main-content__section-item {
