@@ -9,7 +9,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --bg-header-image: url(/images/cover-image-light.png);
+  --bg-header-image: url(../images/cover-image-light.png);
   --dark-color-title: #ffc2e6;
   --accent-color: #ff8dcb;
   --color-decor: #353430;
@@ -30,7 +30,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-header-image: url(/images/cover-image-light.png);
+    --bg-header-image: url(../images/cover-image-light.png);
     --dark-color-title: #ffc2e6;
     --accent-color: #ff8dcb;
     --color-decor: #353430;

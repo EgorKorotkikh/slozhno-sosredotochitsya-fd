@@ -1,6 +1,11 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  background-color: var(--bg-color);
+  background-image: var(--bg-header-image, url(../images/cover-image-dark.png));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
@@ -13,11 +18,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
   padding: 0 10px;
-  max-height: 668px;
-  background-image: var(--bg-header-image, url(/images/cover-image-dark.png));
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  min-height: 668px;
 }
 
 .decorated-zone::before {
@@ -102,6 +103,7 @@
 }
 
 .header__theme-menu-button_active {
+  pointer-events: none;
   border: 1px solid var(--button-color);
 }
 
@@ -127,8 +129,9 @@
 }
 
 .header-description {
+  min-width: 355px;
   margin-block-start: 55px;
-  height: 117px;
+  max-height: 117px;
   color: var(--accent-text-color);
   font-weight: var(--font-weight-bold) ;
   font-size: var(--font-size);
@@ -140,7 +143,6 @@
 
 .main-content {
   padding: 0 10px;
-  background-color: var(--bg-color);
 }
 
 .main-content__section {
@@ -237,9 +239,8 @@
 }
 
 .footer {
-  background-color: var(--bg-color);
   height: 100vh;
-  max-height: 667px;
+  min-height: 667px;
   display: flex;
   flex-direction: column;
   justify-content: center;
