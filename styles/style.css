@@ -131,7 +131,7 @@
 .header-description {
   min-width: 355px;
   margin-block-start: 55px;
-  max-height: 117px;
+  align-self: start;
   color: var(--accent-text-color);
   font-weight: var(--font-weight-bold) ;
   font-size: var(--font-size);
@@ -192,7 +192,7 @@
 }
 
 .main-content__section-description a:hover {
-  border-bottom: 1px solid #F1B2CE;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .main-content__section-description a:focus {
@@ -200,7 +200,7 @@
 }
 
 .main-content__section-description a:focus-visible {
-  border: 1px solid #F1B2CE;
+  border: 1px solid var(--accent-color);
   outline: none;
 }
 
@@ -213,7 +213,6 @@
   background-color: var(--accent-color);
 }
  .main-content__section-image {
-  background-color: var(--bg-color);
   padding-block-start: 28px;
 }
 
@@ -269,7 +268,6 @@
   }
 
   .header-title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-inline-start: -20px;
   }
 
@@ -290,38 +288,10 @@
   }
 
   .rec-element {
-    display: var(--rec-display, flex);
-    position: absolute;
     inset-block-start: 21px;
     inset-inline-end: 30px;
-    justify-content: center;
   }
-  
-  .rec-element::before {
-    content: "Rec";
-    color: var(--text-color, #ff0070);
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: uppercase;
-  }
-  
-  .rec-element::after {
-    position: relative;
-    content: "";
-    display: inline-block;
-    block-size: 9px;
-    inline-size: 9px;
-    border-radius: 50%;
-    margin-inline-start: 4px;
-    margin-block-start: 5px;
-    background-color: var(--bg-decoration, #ff0070);
-    box-shadow: 0px 0px 4px 2px var(--accent-color, #ff0070);
-    margin-inline-end: 5px;
-    inset-inline-end: 0px;
-    inset-inline-start: 4px;
-    inset-block-start: 3px;
-  }
-
+    
   .header__theme-menu-list {
     margin-block-start: 115px;
   }
@@ -342,17 +312,12 @@
     width: 712px;
   }
 
-  .section-concentration {
-    margin-block-end: 0;
-  }
-
   .section-concentration > .main-content__section-title {
-    margin-inline-end: 0;
     width: 236px;
   }
 
   .section-concentration > .main-content__section-card {
-    width: 728px;
+    width: 100%;
   }
 
   .fish-section {
@@ -376,7 +341,6 @@
     gap: 20px;
     grid-auto-flow: dense;
     min-width: 728px;
-    width: 100%;
     padding-block-end: 60px;
     justify-self: center;
   }
@@ -409,10 +373,6 @@
     min-block-size: 1024px;
     padding: 0px 20px;
   }
-
-  .footer-title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
 }
 
 @media (width >= 1024px) {
@@ -422,7 +382,6 @@
 
   .header__theme-menu {
     justify-self: center;
-    align-self: start;
     margin-block-start: 9px;
     
   }
@@ -433,10 +392,13 @@
     gap: 10px;
   }
 
+  .header-title{
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
   .header-description {
     margin-block-start: 114px;
     width: 491px;
-    max-height: 71px;
   }
 
   .main-content__section-card {
@@ -450,15 +412,18 @@
   .section-concentration > .main-content__section-card {
     display: flex;
     width: 100%;
-    min-height: 431px;
     gap: 20px;
   }
 
   .section-concentration .main-content__section-item {
-    min-width: 315px
+    max-width: 315px;
   }
 
   .footer {
     min-block-size: 768px;
+  }
+
+  .footer-title{
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
