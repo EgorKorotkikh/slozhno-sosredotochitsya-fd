@@ -23,6 +23,7 @@
   --content-text-color: #353430;
   --footer-text-shadow: #ff0070;
   --focus-link: #353430;
+  --hover-link: #353430;
 }
 
 .theme-light .page {
@@ -45,5 +46,6 @@
     --content-text-color: #353430;
     --footer-text-shadow: #ff0070;
     --focus-link: #353430;
+    --hover-link: #353430;
   }
 }

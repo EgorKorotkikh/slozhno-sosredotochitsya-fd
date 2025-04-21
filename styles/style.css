@@ -192,7 +192,7 @@
 }
 
 .main-content__section-description a:hover {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--hover-link);
 }
 
 .main-content__section-description a:focus {
@@ -419,14 +419,9 @@
   }
 
   .section-concentration > .main-content__section-card {
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  .section-concentration .main-content__section-item {
-    max-width: 314px;
   }
 
   .footer {
